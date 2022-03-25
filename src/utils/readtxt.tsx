@@ -7,7 +7,7 @@ export const isNotEmpty = (string: string | null | undefined) => {
 
 export const readtext = () =>
   getSelectedText()
-    .then((text) => (isNotEmpty(text) ? text : runAppleScript("the clipboard")))
-    .catch(() => runAppleScript("the clipboard"))
+    // .then((text) => (isNotEmpty(text) ? text : runAppleScript("the clipboard")))
+    // .catch(() => runAppleScript("the clipboard"))
     .then((text) => (isNotEmpty(text) ? text : ""))
     .catch(() => "");
